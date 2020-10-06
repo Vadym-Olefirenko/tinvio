@@ -1,0 +1,47 @@
+@import '../../general';
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar {
+    @include flexRowBetween;
+    padding: 26px 0;
+}
+
+.nav__list {
+    @include flexRowBetween;
+    list-style: none;
+    margin-right: auto;
+    border-left: 1px solid rgba(33, 39, 46, 0.2);
+    min-height: 24px;
+
+    li {
+        @include flexRowCenter; 
+    }
+
+    a {
+        text-decoration: none;
+        @include font(12px, 100%, 600);
+        color: #21272e;
+        padding: 0 24px;
+    }
+}
+
+.logo__box {
+    width: 120px;
+}
+
+.logo {
+    @include flexRowBetween;
+    width: 100%;
+}
+
+.laptop__navigation {
+    @include flexRowBetween;
+    width: calc(100% - 120px)
+}

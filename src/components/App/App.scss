@@ -1,0 +1,46 @@
+
+main {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// @media (min-width: 768px) {
+//     .container {
+//         max-width: 616px;
+//     }
+// }
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 872px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1128px;
+    }
+}
+
+.section__name {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #21272e;
+}
+
+.section__desk {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: #787c80;
+}

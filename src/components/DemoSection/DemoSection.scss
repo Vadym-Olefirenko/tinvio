@@ -1,0 +1,20 @@
+.demo__section {
+    position: relative;
+    text-align: center;
+    padding: 0 0 100px;
+}
+
+.demo__img {
+    position: relative;
+    margin-top: -95px;
+    width: 100%;
+    max-width: 984px;
+}
+
+@media screen and (max-width: 700px) {
+    .demo__img {
+        width: auto;
+        margin-top: -71px;
+        max-width: 750px;
+    }
+}

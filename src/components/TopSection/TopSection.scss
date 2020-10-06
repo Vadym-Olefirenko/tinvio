@@ -1,0 +1,133 @@
+@import '../../general.scss';
+
+.top__section {
+    text-align: center;
+    background-color: #eaedf5;
+    position: relative;
+    overflow-x: hidden;
+    padding: 215px 0 223px;
+}
+
+.top__section-info {
+    position: relative;
+    z-index: 9;
+}
+
+.boxes {
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    left: -9%;
+    bottom: 0;
+    z-index: 7;
+}
+
+.top__images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fruits {
+    width: 100%;
+    max-width: 340px;
+    position: absolute;
+    right: -5%;
+    bottom: 40px;
+    z-index: 7;
+}
+
+.confetti {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+.top__section h2 {
+    @include font(13px, 1.1, bold);
+    color: #f43939;
+}
+
+.top__section h1 {
+    @include font(40px, 1.1, bold);
+    color: #21272e;
+    padding: 20px 0 60px 0;
+}
+
+.top__section .its__free {
+    @include flexRowCenter;
+    margin-top: 16px;
+}
+
+.its__free p {
+    @include font(12px, 1.1, 500);
+    color: #909599;
+}
+
+@media screen and (max-width: 1279px) {
+    .boxes {
+        left: -22%;
+    }
+
+    .fruits {
+        right: -16%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .boxes {
+        left: -33%;
+    }
+
+    .fruits {
+        right: -21%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .top__section {
+        padding: 155px 0 120px;
+    }
+
+    .top__section h1 {
+        @include font(28px, 1.1, bold);
+        padding: 20px 0 42px 0;
+    }
+
+    .top__section h1 br {
+        display: none;
+    }
+
+    .top__images {
+        position: relative;
+        @include flexRowBetween;
+        margin-top: 70px;
+    }
+
+    .boxes {
+        position: relative;
+        left: -10%;
+    }
+
+    .fruits {
+        position: relative;
+        right: 0;
+        top: 70px
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .boxes {
+        left: -50%;
+    }
+
+    .fruits {
+        right: 48%;
+        top: 70px
+    }
+}

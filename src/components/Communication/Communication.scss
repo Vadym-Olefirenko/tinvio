@@ -1,0 +1,48 @@
+@import '../../general.scss';
+
+.communication {
+    background-color: #edeff5;
+    padding: 96px 0 82px;
+}
+
+.communication__content {
+    @include flexRowBetween;
+}
+
+.communication__images {
+    width: 60%;
+    // height: 600px;
+    @include flexRowCenter;
+
+    .tab__img {
+        max-width: 624px;
+        height: 400px;
+    }
+}
+
+.communication__text {
+    width: 33%;
+
+    h5 {
+        margin-bottom: 40px;
+    }
+
+    .tabs__btn-group {
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 64px;
+        border-bottom: solid 2px rgba(33, 39, 46, 0.14);
+
+        .tab__btn {
+            width: 128px;
+            height: 48px;
+            margin-right: 24px;
+        }
+    }
+
+    h6 {
+        @include font(18px, 1.67, bold);
+        padding-top: 56px;
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,17 @@
+@mixin flexRowBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexRowCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin font($size, $height, $weight) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+}
