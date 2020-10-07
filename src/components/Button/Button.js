@@ -4,7 +4,7 @@ import './Button.scss';
 
 function Button({buttonText, buttonClassNames}) {
     return (
-        <button className={buttonClassNames ? `btn ${buttonClassNames}` : "btn"}>
+        <button className={buttonClassNames ? `${buttonClassNames}` : "btn"}>
             {buttonText}
         </button>
     )

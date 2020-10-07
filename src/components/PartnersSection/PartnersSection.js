@@ -14,10 +14,13 @@ function PartnersSection() {
 
     const sliderParams = {
         className: 'partners__slider',
-        spaceBetween: 50,
-        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerView: 3,
         centeredSlides: true,
-        loop: true
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
     }
 
     const showSwiper = () => window.innerWidth <= 600 ? setSwiper(true) : setSwiper(false);

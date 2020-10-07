@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './DemoSection.scss';
-import ImageDemo from './demo.png';
+import ImageDemo from './desktop.png';
 
 const Demosection = () => {
     return (

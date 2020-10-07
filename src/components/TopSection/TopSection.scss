@@ -2,7 +2,7 @@
 
 .top__section {
     text-align: center;
-    background-color: #eaedf5;
+    background-color: #FAFBFD;
     position: relative;
     overflow-x: hidden;
     padding: 215px 0 223px;
@@ -45,7 +45,7 @@
     margin-left: 10px;
 }
 
-.top__section h2 {
+h2 {
     @include font(13px, 1.1, bold);
     color: #f43939;
 }

@@ -1,8 +1,9 @@
 @import '../../general.scss';
 
 .communication {
-    background-color: #edeff5;
+    background-color: #FAFBFD;
     padding: 96px 0 82px;
+    position: relative;
 }
 
 .communication__content {
@@ -11,12 +12,13 @@
 
 .communication__images {
     width: 60%;
-    // height: 600px;
-    @include flexRowCenter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .tab__img {
         max-width: 624px;
-        height: 400px;
+        height: 370px;
     }
 }
 
@@ -32,17 +34,76 @@
         justify-content: flex-start;
         padding-bottom: 64px;
         border-bottom: solid 2px rgba(33, 39, 46, 0.14);
-
-        .tab__btn {
-            width: 128px;
-            height: 48px;
-            margin-right: 24px;
-        }
     }
 
     h6 {
         @include font(18px, 1.67, bold);
         padding-top: 56px;
         padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 1279px) {
+
+    .communication__images {
+        width: 50%;
+    }
+
+    .communication__images .tab__img {
+        max-width: 474px;
+        height: 300px;
+    }
+
+    .communication__text {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .communication__content {
+        flex-direction: column-reverse;
+    }
+
+    .communication__text {
+        text-align: center;
+        width: 100%;
+
+        .tabs__btn-group {
+            justify-content: center;
+            border-bottom: none;
+        }
+
+        .tabs__desk {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .communication__images {
+        margin-left: 0;
+    }
+
+    .communication {
+        padding: 66px 0 222px;
+    }
+}
+
+@media (max-width: 767px) {
+    .communication__images .tab__img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .communication__text .tabs__desk{
+        width: 80%;
+        bottom: 40px;
+    }
+
+    .communication {
+        padding: 56px 0 242px;
     }
 }

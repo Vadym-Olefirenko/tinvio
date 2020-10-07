@@ -21,6 +21,14 @@ main {
     .container {
         max-width: 872px;
     }
+
+    .demo__section .container {
+        max-width: 100%;
+    }
+
+    .communication .container {
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -43,4 +51,11 @@ main {
     line-height: 1.67;
     letter-spacing: normal;
     color: #787c80;
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 1.67;
+    font-weight: bold;
+    color: #21272e;
 }

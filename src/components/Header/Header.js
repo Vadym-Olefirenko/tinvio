@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useLocation, NavLink } from "react-router-dom";
 import Button from '../Button/Button';
 import Burger from './burger.svg';
 
@@ -17,6 +17,8 @@ const Header = () => {
     }, [mobileButton]);
 
     window.addEventListener('resize', showMobileButton)
+
+    const { pathname } = useLocation();
     return (
         <div className="header">
             <div className="container">
@@ -34,16 +36,36 @@ const Header = () => {
                             <div className="laptop__navigation">
                                 <ul className="nav__list">
                                     <li>
-                                        <Link to="/">Home</Link>
+                                        <NavLink
+                                            to="/"
+                                            isActive={() => ['/'].includes(pathname)}
+                                        >
+                                            Home
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/supplier">Supplier</Link>
+                                        <NavLink
+                                            to="/supplier"
+                                            isActive={() => ['/supplier'].includes(pathname)}
+                                        >
+                                            Supplier
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/about">About</Link>
+                                        <NavLink 
+                                            to="/about"
+                                            isActive={() => ['/about'].includes(pathname)}
+                                        >
+                                            About
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <Link to="/contact">Contact</Link>
+                                        <NavLink 
+                                            to="/contact"
+                                            isActive={() => ['/contact'].includes(pathname)}
+                                        >
+                                            Contact
+                                        </NavLink>
                                     </li>
                                 </ul>
 
