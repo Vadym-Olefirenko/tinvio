@@ -26,8 +26,6 @@ const TopSection = () => {
                     <img src={Boxes} className="boxes" alt="boxes" />
                     <img src={Fruits} className="fruits" alt="fruits" />
                 </div>
-                {/* <img src={Boxes} className="boxes" alt="boxes"/>
-                <img src={Fruits} className="fruits" alt="fruits"/> */}
             </div>
         </section>
     )

@@ -4,36 +4,20 @@ main {
 }
 
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 1128px;
+    margin: 0px auto;
+    padding: 0px 20px;
 }
 
-// @media (min-width: 768px) {
-//     .container {
-//         max-width: 616px;
-//     }
-// }
-
-@media (min-width: 1024px) {
+@media (max-width: 1279px) {
     .container {
-        max-width: 872px;
-    }
-
-    .demo__section .container {
-        max-width: 100%;
-    }
-
-    .communication .container {
-        max-width: 100%;
+        padding: 0px 44px;
     }
 }
 
-@media (min-width: 1280px) {
+@media (max-width: 767px) {
     .container {
-        max-width: 1128px;
+        padding: 0px 24px;
     }
 }
 

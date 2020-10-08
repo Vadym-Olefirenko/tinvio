@@ -1,6 +1,7 @@
 import React from 'react';
 import Communication from '../../Communication/Communication';
 import Demosection from '../../DemoSection/Demosection';
+import GetStartSection from '../../GetStartSection/GetStartSection';
 import Order from '../../Order/Order';
 import PartnersSection from '../../PartnersSection/PartnersSection';
 import SliderSection from '../../SliderSection/SliderSection';
@@ -18,6 +19,7 @@ function HomePage() {
             <Communication/>
             <Order/>
             <Steps/>
+            <GetStartSection/>
         </main>
     )
 }

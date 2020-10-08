@@ -48,6 +48,7 @@
 h2 {
     @include font(13px, 1.1, bold);
     color: #f43939;
+    text-transform: uppercase;
 }
 
 .top__section h1 {

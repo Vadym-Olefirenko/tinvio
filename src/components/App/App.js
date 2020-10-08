@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 import Header from '../Header/Header';
 import HomePage from '../pages/HomePage/HomePage';
+import Footer from '../Footer/Footer';
 
 import './App.scss';
 
@@ -12,6 +13,7 @@ function App() {
       <Router>
         <Header />
         <HomePage />
+        <Footer/>
         <Switch>
           <Route path="/" />
         </Switch>
