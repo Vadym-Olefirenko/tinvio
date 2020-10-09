@@ -6,20 +6,28 @@ import 'swiper/components/pagination/pagination.scss';
 
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
-export default function Slider({ items, params}) {
-    console.log('nav', params)
+export default function Slider({ items, params, description = false}) {
     const itemsArr = (arr) => {
-        let images = arr.map((el, i) => {
+        let arrItems = arr.map((el, i) => {
             return (
                 <SwiperSlide key={i}>
-                    <div className="slide__img-box">
-                        <img src={el} className="slide__img" alt={`${el}`} />
-                    </div>
+                    {description ? (
+                        <>
+                        <h5 className="section__name">{el.sliderHead}</h5>
+                        <p className="section__desk">
+                            {el.sliderText}
+                        </p>
+                        </>
+                    ) : (
+                            <div className="slide__img-box">
+                                <img src={el.image} className="slide__img" alt={`${el}`} />
+                            </div>
+                        )}
                 </SwiperSlide>
             )
         });
 
-        return images;
+        return arrItems;
 
     }
     return (
@@ -30,7 +38,7 @@ export default function Slider({ items, params}) {
                 {itemsArr(items)}
 
             </Swiper>
-           
+
         </>
     );
 };

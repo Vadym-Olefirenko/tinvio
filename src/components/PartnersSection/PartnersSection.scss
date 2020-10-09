@@ -41,4 +41,17 @@
     .partners {
         padding: 10px 0 60px;
     }
+
+    .partners__slider {
+        .swiper-slide {
+            @include flexRowCenter;
+
+            .slide__img {
+                position: relative;
+                width: 127px;
+                height: 77px;
+                object-fit: contain;
+            }
+        }
+    }
 }

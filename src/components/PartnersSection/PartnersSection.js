@@ -7,15 +7,15 @@ import logo4 from './SimplyWrapps.png';
 import logo5 from './Italian.png';
 import Swiper from '../Swiper/Swiper';
 
-const Logos = [logo1, logo2, logo3, logo4, logo5];
+const Logos = [{image: logo1}, {image: logo2}, {image: logo3}, {image: logo4}, {image: logo5}];
 
 function PartnersSection() {
     const [swiper, setSwiper] = useState(false);
 
     const sliderParams = {
         className: 'partners__slider',
-        spaceBetween: 30,
-        slidesPerView: 3,
+        spaceBetween: 10,
+        slidesPerView: 2,
         centeredSlides: true,
         loop: true,
         autoplay: {
@@ -55,7 +55,7 @@ const LogoRow = () => {
     const LogoItems = (arr) => {
         let images = arr.map((el, i) => {
             return (<div className="logo__item" key={i}>
-                <img src={el} className="partner__logo" alt={`${el}`} />
+                <img src={el.image} className="partner__logo" alt={`${el}`} />
             </div>
             )
         });

@@ -4,6 +4,11 @@
     padding: 127px 0 122px;
 }
 
+.order__container {
+    max-width: 1032px;
+    margin: 0 auto;
+}
+
 .order__head {
     @include flexRowBetween;
     align-items: flex-start;
@@ -14,7 +19,7 @@
     }
 
     p {
-        width: 40%;  
+        width: 46%;  
     }
 }
 
@@ -22,8 +27,7 @@
     @include flexRowBetween;
 
     .card {
-        width: 30%;
-        max-width: 316px;
+        width: 316px;
         height: 552px;
         border-radius: 52px;
         background-color: #e1eff0;
@@ -63,18 +67,16 @@
     }
 }
 
-.cards__row, .order__head {
-    padding: 0 30px;
-}
 
 @media screen and (max-width: 1279px) {
-    .cards__row, .order__head {
-        padding: 0;
-    }
 
+    .order__container {
+       padding: 0 48px;
+    }
+    
     .cards__row {
         .card {
-            max-width: 265px;
+            width: 265px;
             height: 464px;
 
             .card__img {
@@ -117,7 +119,6 @@
     .cards__row {
         flex-direction: column;
         .card {
-            max-width: 411px;
             width: 411px;
             height: 718px;
             margin-bottom: 96px;

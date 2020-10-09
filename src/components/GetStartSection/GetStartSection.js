@@ -60,7 +60,7 @@ function GetStartSection() {
 
     return (
         <section className="getStart" id="getStart">
-            <div className="container">
+            <div className="container__fluid">
                 <div className="getStart__content">
                     <div className="getStartHead">
                         <h2>let’s do this</h2>

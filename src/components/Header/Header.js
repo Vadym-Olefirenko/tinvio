@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, NavLink } from "react-router-dom";
-import Button from '../Button/Button';
+
 import Burger from './burger.svg';
 
 import './Header.scss';
@@ -70,10 +70,7 @@ const Header = () => {
                                 </ul>
 
                                 <Link to="/">
-                                    <Button
-                                        buttonText="Get Started"
-                                        buttonClassNames="btn btn__transparent nav__btn"
-                                    />
+                                    <button className="btn btn__transparent nav__btn">Get Started</button>
                                 </Link>
                             </div>
                         )}

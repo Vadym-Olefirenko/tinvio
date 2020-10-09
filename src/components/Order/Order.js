@@ -11,7 +11,7 @@ import check from './check.svg';
 function Order() {
     return (
         <section className="order">
-            <div className="container">
+            <div className="order__container">
                 <div className="order__head">
                     <h5 className="section__name">
                         Seamless Ordering<br /> Experience

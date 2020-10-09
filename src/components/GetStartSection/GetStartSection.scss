@@ -1,332 +1,339 @@
-@import '../../general.scss';
+@import "../../general.scss";
 @font-face {
-    font-family: HandOfSeanPro;
-    src: url('../../fonts/Hand_Of_Sean.ttf');
-  }
+  font-family: HandOfSeanPro;
+  src: url("../../fonts/Hand_Of_Sean.ttf");
+}
 
 .getStart__container {
-    max-width: 1128px;
-    margin: 0px auto;
-    padding: 0px 20px;
-    box-sizing: content-box;
+  max-width: 1128px;
+  margin: 0px auto;
+  padding: 0px 20px;
+  box-sizing: content-box;
 }
 
 .getStart {
-    padding: 168px 0 91px;
-    background-image: linear-gradient(rgb(255, 255, 255) 0%, rgb(250, 250, 250) 100%);
+  padding: 168px 0 91px;
+  background-image: linear-gradient(
+    rgb(255, 255, 255) 0%,
+    rgb(250, 250, 250) 100%
+  );
 }
 
 .getStart__content {
-    display: flex;
-    height: 550px;
-    position: relative;
-    z-index: 2;
-    flex-flow: column wrap;
+  display: flex;
+  height: 550px;
+  position: relative;
+  z-index: 2;
+  flex-flow: column wrap;
 }
 
 .getStartHead {
-    width: 494px;
-    h5 {
-        padding: 16px 30px 140px 0;
-        @include font(40px, 1.36, bold)
-    }
+  width: 494px;
+  h5 {
+    padding: 16px 30px 140px 0;
+    @include font(40px, 1.36, bold);
+  }
 }
 
-    .arrow__box {
-        font-family: HandOfSeanPro;
-        @include font(20px, 1.1, normal);
-        color: #21272e;
-        letter-spacing: -3px;
-    }
+.arrow__box {
+  font-family: HandOfSeanPro;
+  @include font(20px, 1.1, normal);
+  color: #21272e;
+  letter-spacing: -3px;
+}
 
-    .meet__us-arrow {
-        position: absolute;
-        top: -50px;
-        left: -60px;
+.meet__us-arrow {
+  position: absolute;
+  top: -50px;
+  left: -60px;
 
-        img {
-            width: 110px;
-            height: 64px;
-            object-fit: contain;
-            position: absolute;
-            top: -26px;
-            right: -28px;
-        }
-    }
+  img {
+    width: 110px;
+    height: 64px;
+    object-fit: contain;
+    position: absolute;
+    top: -26px;
+    right: -28px;
+  }
+}
 
 .meet__us {
-    position: relative;
+  position: relative;
+  width: 288px;
+
+  .countries__list {
+    list-style: none;
+    @include flexRowBetween;
+    flex-wrap: wrap;
     width: 288px;
+    height: 150px;
+    padding: 20px 25px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 14px -6px;
+    background-color: #fff;
+    border-radius: 8px;
 
-    .countries__list {
-        list-style: none;
-        @include flexRowBetween;
-        flex-wrap: wrap;
-        width: 288px;
-        height: 150px;
-        padding: 20px 25px;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 14px -6px;
-        background-color: #fff;
-        border-radius: 8px;
+    .country__item {
+      display: flex;
+      align-items: center;
+      width: 50%;
 
-        .country__item {
-            display: flex;
-            align-items: center;
-            width: 50%;
+      .country__name {
+        @include font(14px, 1.36, 500);
+        color: #21272e;
+      }
 
-            .country__name {
-                @include font(14px, 1.36, 500);
-                color: #21272e;
-            }
-
-            img {
-                margin-right: 8px;
-            }
-        }
+      img {
+        margin-right: 8px;
+      }
     }
+  }
 }
 
 .form__box {
+  position: relative;
+  max-width: 447px;
+  height: 496px;
+  margin-left: 80px;
+
+  .form__box-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("./dots.png") no-repeat right top 55px / 98px 182px,
+      url("./dots.png") no-repeat left 62% bottom / 98px 182px;
+    z-index: 2;
+  }
+
+  .sign__us-arrow {
+    font-family: HandOfSeanPro;
+    @include font(20px, 1.1, normal);
+    color: #21272e;
+    position: absolute;
+    left: 20%;
+    top: -48px;
+    letter-spacing: -3px;
+
+    img {
+      position: absolute;
+      left: -34px;
+      right: auto;
+      top: -40px;
+      width: 120px;
+      height: 70px;
+    }
+
+    p {
+      white-space: nowrap;
+    }
+  }
+
+  .contact__form {
+    width: 407px;
+    height: 461px;
+    border-radius: 13px;
+    box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
-    max-width: 447px;
-    height: 496px;
-    margin-left: 80px;
+    z-index: 5;
+
+    .input__wrap {
+      width: 100%;
+      height: 56px;
+      @include flexRowBetween;
+    }
+
+    .spec__wrap {
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        background: url("./icon24Phone.svg") no-repeat top center / cover;
+      }
+    }
+
+    .form__input {
+      @include font(14px, 1.36, 500);
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      border: solid 1px rgba(144, 149, 153, 0.35);
+      padding: 18px 16px;
+      color: rgba(144, 149, 153, 0.35);
+      outline: none;
+    }
+
+    .code__input {
+      width: 96px;
+    }
+
+    .phone__input {
+      width: 231px;
+      position: relative;
+      padding-right: 40px;
+    }
+
+    .form__btn {
+      width: 172px;
+      height: 52px;
+      outline: none;
+    }
+
+    .no__spam {
+      @include font(12px, 1.1, 500);
+      color: #909599;
+      padding-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .getStartHead h5 {
+    padding: 16px 37px 140px 0;
+  }
+
+  .form__box {
+    margin-left: 0;
+    margin-top: 100px;
 
     .form__box-bg {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: url("./dots.png") no-repeat right top 55px / 98px 182px, 
-                url("./dots.png") no-repeat left 62% bottom / 98px 182px;
-        z-index: 2;
+      width: 110%;
+      height: 110%;
+      top: -5%;
+      left: -5%;
+      background: url("./dots.png") no-repeat right 10px top / 98px 182px;
     }
 
     .sign__us-arrow {
-        font-family: HandOfSeanPro;
-        @include font(20px, 1.1, normal);
-        color: #21272e;
-        position: absolute;
-        left: 20%;
-        top: -48px;
-        letter-spacing: -3px;
-
-        img {
-            position: absolute;
-            left: -34px;
-            right: auto;
-            top: -40px;
-            width: 120px;
-            height: 70px;
-        }
-
-        p {
-            white-space: nowrap;
-        }
+      top: -128px;
     }
+  }
 
-    .contact__form {
-        width: 407px;
-        height: 461px;
-        border-radius: 13px;
-        box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
-        background-color: #fff;
-        padding: 32px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-        z-index: 5;
+  .meet__us-arrow {
+    left: -22px;
+  }
 
-        .input__wrap {
-            width:  100%;
-            height: 56px;
-            @include flexRowBetween;
-        }
-
-        
-            .spec__wrap {
-                position: relative;
-                &::after {
-                    content: "";
-                    display: inline-block;
-                    width: 25px;
-                    height: 25px;
-                    position: absolute;
-                    right: 16px;
-                    top: 16px;
-                    background: url('./icon24Phone.svg') no-repeat top center /cover;
-                }
-            }
-        
-
-        .form__input {
-            @include font(14px, 1.36, 500);
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            border: solid 1px rgba(144, 149, 153, 0.35);
-            padding: 18px 16px;
-            color: rgba(144, 149, 153, 0.35);
-            outline: none;
-        }
-
-        .code__input {
-            width: 96px;
-        }
-
-        .phone__input {
-            width: 231px;
-            position: relative;
-            padding-right: 40px;
-        }
-
-        .form__btn {
-            width: 172px;
-            height: 52px;
-            outline: none;
-        }
-
-        .no__spam {
-            @include font(12px, 1.1, 500);
-            color: #909599;
-            padding-right: 10px;
-        }
-    }
-}
-
-
-@media screen and (max-width: 1279px) {
-
-    .getStartHead h5 {
-        padding: 16px 37px 140px 0;
-    }
-
-    .form__box {
-        margin-left: 0;
-        margin-top: 100px;
-
-        .sign__us-arrow {
-            top: -128px;
-        }
-    }
-
-    .meet__us-arrow {
-        left: -22px;
-    }
-
-    .getStart {
-        padding: 200px 0 191px;
-    }
-
+  .getStart {
+    padding: 200px 0 191px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
+  .getStart {
+    padding: 120px 0 81px;
+  }
 
-    .getStart {
-        padding: 120px 0 81px;
+  .getStartHead {
+    text-align: center;
+    width: 100%;
+    order: 1;
+
+    h5 {
+      padding: 16px 0 164px;
+      width: 100%;
+    }
+  }
+
+  .getStart__content {
+    height: auto;
+    align-items: center;
+  }
+
+  .meet__us {
+    order: 3;
+    margin-top: 77px;
+
+    .meet__us-arrow {
+      left: 40%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .form__box {
+    height: 486px;
+    order: 2;
+    margin-top: 0;
+
+    .form__box-bg {
+      background: url("./dots.png") no-repeat right top 55px / 98px 182px,
+        url("./dots.png") no-repeat left 62% bottom 30px / 98px 182px;
     }
 
-    .getStartHead {
-        text-align: center;
-        width: 100%;
-        order: 1;
-
-        h5 {
-            padding: 16px 0 164px;
-            width: 100%;
-        }
+    .sign__us-arrow {
+      top: -68px;
     }
-
-    .getStart__content {
-        height: auto;
-        align-items: center;
-    }
-
-    .meet__us {
-        order: 3;
-        margin-top: 77px;
-
-        .meet__us-arrow {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-
-    .form__box {
-        height: 486px;
-        order: 2;
-        margin-top: 0;
-
-        .sign__us-arrow {
-            top: -68px;
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .getStartHead {
+  .getStartHead {
+    h5 {
+      font-size: 24px;
+    }
+  }
 
-        h5 {
-            font-size: 24px;
-        }
+  .form__box {
+    width: 100%;
+    height: 486px;
+    order: 2;
+    margin-top: 0;
+
+    .form__box-bg {
+      width: 110%;
+      height: 110%;
+      top: -5%;
+      left: -5%;
+      background: url("./dots.png") no-repeat right top 15px / 98px 182px,
+        url("./dots.png") no-repeat left 8px bottom 30px / 98px 182px;
     }
 
-    .form__box {
+    .contact__form {
+      width: 100%;
+
+      .input__wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .spec__wrap {
+        justify-content: space-between;
+      }
+
+      .code__input {
+        width: 30%;
+      }
+
+      .phone__input {
+        width: 63%;
+      }
+
+      .input__wrap:last-child {
+        height: auto;
+      }
+
+      .form__btn {
         width: 100%;
-        height: 486px;
-        order: 2;
-        margin-top: 0;
-
-        .form__box-bg {
-            width: 110%;
-            height: 110%;
-            top: -5%;
-            left: -5%;
-            background: url("./dots.png") no-repeat right top 15px / 98px 182px, 
-                        url("./dots.png") no-repeat left 8px bottom 30px / 98px 182px;
-        }
-
-        .contact__form {
-            width: 100%;
-
-            .input__wrap {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .spec__wrap {
-                justify-content:  space-between;
-            }
-
-            .code__input {
-                width: 30%;
-            }
-
-            .phone__input {
-                width: 63%;
-            }
-
-            .input__wrap:last-child {
-                height: auto;
-            }
-
-            .form__btn {
-                width: 100%;
-                margin-bottom: 16px;
-            }
-
-        }
-
-        .sign__us-arrow {
-            left: auto;
-            right: 0;
-        }
+        margin-bottom: 16px;
+      }
     }
 
-    .meet__us {
-
-        .meet__us-arrow {
-            left: 25%;
-        }
+    .sign__us-arrow {
+      left: auto;
+      right: 0;
     }
+  }
+
+  .meet__us {
+    .meet__us-arrow {
+      left: 25%;
+    }
+  }
 }

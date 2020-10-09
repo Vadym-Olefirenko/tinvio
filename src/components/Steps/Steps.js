@@ -8,7 +8,7 @@ import stepImg3 from './st3.png'
 function Steps() {
     return (
         <section className="steps">
-            <div className="container">
+            <div className="container__fluid">
                 <div className="steps__head">
                     <h2>ARE YOU READY?</h2>
                     <h5 className="section__name">

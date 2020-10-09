@@ -28,7 +28,7 @@
         text-decoration: none;
         @include font(12px, 100%, 600);
         color: #21272e;
-        padding: 0 24px;
+        padding: 0 12px;
     }
 
     a.active {
@@ -45,7 +45,28 @@
     width: 100%;
 }
 
+.nav__btn {
+    @include font(12px, 100%, 600);
+    width: 103px;
+    height: 36px;
+}
+
 .laptop__navigation {
     @include flexRowBetween;
     width: calc(100% - 120px)
+}
+
+@media screen and (max-width: 1279px) {
+    
+    .nav__btn {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .nav__list {
+        a {
+            padding: 0 15px;
+        }
+    }
 }

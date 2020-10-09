@@ -7,7 +7,10 @@
 }
 
 .communication__content {
-    @include flexRowBetween;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 415px;
 }
 
 .communication__images {
@@ -43,6 +46,11 @@
     }
 }
 
+.tabs__desk {
+    width: 33%;
+    margin-top: 56px;
+}
+
 @media (max-width: 1279px) {
 
     .communication__images {
@@ -61,49 +69,46 @@
 
 @media (max-width: 1023px) {
     .communication__content {
-        flex-direction: column-reverse;
+        height: auto;
+        align-items: center;
     }
 
     .communication__text {
         text-align: center;
         width: 100%;
+        order: 1;
 
         .tabs__btn-group {
             justify-content: center;
             border-bottom: none;
         }
 
-        .tabs__desk {
-            position: absolute;
-            bottom: 60px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+    }
+
+    .tabs__desk {
+        order: 3;
+        width: 50%;
+        text-align: center;
     }
 
     .communication__images {
         margin-left: 0;
+        order: 2;
     }
 
-    .communication {
-        padding: 66px 0 222px;
-    }
 }
 
 @media (max-width: 767px) {
-    .communication__images .tab__img {
+    .communication__images {
         width: 100%;
-        height: auto;
+        .tab__img {
+            width: 100%;
+            height: auto;
+        }
     }
-}
 
-@media (max-width: 500px) {
-    .communication__text .tabs__desk{
-        width: 80%;
+    .tabs__desk{
+        width: 100%;
         bottom: 40px;
-    }
-
-    .communication {
-        padding: 56px 0 242px;
     }
 }

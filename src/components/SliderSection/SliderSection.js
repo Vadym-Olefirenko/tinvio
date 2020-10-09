@@ -7,7 +7,23 @@ import img2 from './Operational.png';
 import img3 from './Orders.png';
 
 
-const images = [img3, img2, img1];
+const items = [
+    {
+        image: img3,
+        sliderHead: 'All your orders in one place',
+        sliderText: 'Say no more to chunky emails and messy WhatsApp messages. Receive and manage your orders in one platform',
+    },
+    {
+        image: img2,
+        sliderHead: 'All yours',
+        sliderText: 'Say no more to chunky emails and messy ',
+    },
+    {
+        image: img1,
+        sliderHead: 'Some text',
+        sliderText: 'Say no more to chunky emails and messy Say no more to chunky emails and messy ',
+    },
+];
 
 function SliderSection() {
 
@@ -22,8 +38,9 @@ function SliderSection() {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
         },
-        spaceBetween: 30,
-        slidesPerView: 1
+        spaceBetween: 0,
+        slidesPerView: 1,
+        allowTouchMove: false
       }
 
     return (
@@ -31,10 +48,11 @@ function SliderSection() {
             <div className="container">
                 <div className="slider__section-content">
                     <div className="slider__section-text">
-                        <h5 className="section__name">All your orders in<br/> one place</h5>
-                        <p className="section__desk">
-                            Say no more to chunky emails and messy WhatsApp messages. Receive and manage your orders in one platform
-                        </p>
+                        <Swiper
+                            params={sliderParams}
+                            items={items}
+                            description={true}
+                        />
                         <div className="main__slider-navigation">
                             <button className="swiper-button swiper-button-prev">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -72,7 +90,7 @@ function SliderSection() {
                     <div className="swiper__box">
                         <Swiper
                             params={sliderParams}
-                            items={images}
+                            items={items}
                         />
                     </div>
                 </div>

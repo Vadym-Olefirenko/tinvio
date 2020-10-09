@@ -28,7 +28,6 @@
             list-style: none;
             height: 24px;
             border-left: 1px solid rgba(255, 255, 255, 0.2);
-            border-right: 1px solid rgba(255, 255, 255, 0.2);
 
             li {
                 margin-right: 24px;
@@ -45,6 +44,8 @@
     .footer__socials {
         list-style: none;
         @include flexRowBetween;
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+        height: 24px;
 
         li {
             margin-left: 24px;
@@ -86,5 +87,102 @@
         position: absolute;
         bottom: -38px;
         left: 15px;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .footer {
+        padding: 48px 0 33px;
+    }
+
+    .footer__content {
+        height: 115px;
+
+        .foot__logo {
+            margin-left: -12px;
+        }
+
+        .footer__nav {
+            width: calc(100% - 120px);
+
+            .footer__nav--list {
+                justify-content: flex-start;
+            }
+        }
+
+        .footer__rights {
+            position: static;
+            order: 2
+        }
+
+        .footer__socials {
+            order: 3;
+            margin-left: 24px;
+        }
+
+        .footer__stores {
+            order: 4;
+            margin-left: auto;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 48px 0 16px;
+    }
+
+    .footer__content {
+        flex-direction: column;
+        height: auto;
+
+        .foot__logo {
+            margin-left: 0;
+            margin-top: 0;
+        }
+
+        .footer__nav {
+            margin-right: 0;
+            margin-top: 20px;
+            width: 100%;
+           
+            .footer__nav--list {
+                flex-direction: column;
+                justify-content: space-between;
+                border-left: none;
+                height: auto;
+                padding-left: 0;
+
+                li {
+                    margin-right: 0;
+                    margin-bottom: 24px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .footer__rights {
+           padding-top: 16px;
+            order: 5
+        }
+
+        .footer__socials {
+            order: 3;
+            border-left: none;
+            height: auto;
+            margin: 40px auto;
+
+            .foot__soc-item:first-child {
+                margin-left: 0;
+            }
+        }
+
+        .footer__stores {
+            margin-left: 0;
+        }
     }
 }
