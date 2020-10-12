@@ -9,7 +9,7 @@ import arr2 from './arrow1Copy3.png';
 
 configureAnchors({scrollDuration: 400});
 
-const countries = [
+const countriesArr = [
     {
         country: 'Singapore',
         countryCode: 'SG',
@@ -78,7 +78,6 @@ function GetStartSection() {
                                 <img src={arr1} alt="img" />
                                 <p>Or meet us in</p>
                             </div>
-
                             <CountriesList />
                         </div>
 
@@ -162,6 +161,7 @@ const CountriesList = () => {
         const allCountries = arr.map((el, i) => {
             return (
                 <li className="country__item" key={i}>
+                    {/* <img src="&#x1F1E8;&#x1F1FC" alt="img" /> */}
                     <ReactCountryFlag
                         countryCode={el.countryCode}
                         svg
@@ -183,7 +183,7 @@ const CountriesList = () => {
     }
     return (
         <ul className="countries__list">
-            {Country(countries)}
+            {Country(countriesArr)}
         </ul>
     )
 }
