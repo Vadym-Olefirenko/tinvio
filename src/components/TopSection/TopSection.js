@@ -1,4 +1,5 @@
 import React from 'react';
+import { goToAnchor } from 'react-scrollable-anchor';
 
 import './TopSection.scss';
 import Confetti from './confetti.svg'
@@ -11,7 +12,7 @@ const TopSection = () => {
                 <div className="top__section-info">
                     <h2>FOR A SMARTER SUPPLY CHAIN</h2>
                     <h1>Take your business to the next level<br /> with Tinvio’s Supplier Platform</h1>
-                    <button className="btn btn__red top__btn">
+                    <button onClick={()=> goToAnchor('getStart')} className="btn btn__red top__btn">
                         Get Started Now
                     </button>
                     <div className="its__free">

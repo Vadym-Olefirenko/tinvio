@@ -1,7 +1,7 @@
 @import '../../general';
 
 .order {
-    padding: 127px 0 122px;
+    padding: 127px 0 0;
 }
 
 .order__container {
@@ -25,6 +25,10 @@
 
 .cards__row {
     @include flexRowBetween;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding-bottom: 122px;  
 
     .card {
         width: 316px;
@@ -94,6 +98,20 @@
 
     .order {
         padding: 96px 0 0 0;
+        position: relative;
+        
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: url(/static/media/b3.ee6014b4.png) no-repeat left 310px top 1470px/670px;
+            transform: rotateY(180deg);
+            border: 0.5px solid red;
+        }
+
     }
 
     .order__head {
@@ -118,6 +136,7 @@
    
     .cards__row {
         flex-direction: column;
+        background-color: transparent;
         .card {
             width: 411px;
             height: 718px;

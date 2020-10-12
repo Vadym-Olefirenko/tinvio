@@ -3,6 +3,8 @@
 .steps {
     background-color: $bgColor;
     padding: 88px 0 91px;
+    position: relative;
+    z-index: 2;
 }
 
 .steps__head {

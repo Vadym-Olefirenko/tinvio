@@ -71,6 +71,8 @@
     box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 14px -6px;
     background-color: #fff;
     border-radius: 8px;
+    position: relative; 
+
 
     .country__item {
       display: flex;
@@ -269,6 +271,21 @@
 
     .sign__us-arrow {
       top: -68px;
+    }
+  }
+
+  .countries__list {
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      z-index: -1;
+      right: -30px;
+      bottom: -60px;
+      width: 180px;
+      height: 150px;
+      background: url('./dots.png') no-repeat top center / contain;
+      transform: rotate(90deg) scaleY(-1);
     }
   }
 }

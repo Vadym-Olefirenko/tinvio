@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, NavLink } from "react-router-dom";
+import { goToAnchor } from 'react-scrollable-anchor';
 
 import Burger from './burger.svg';
 
@@ -69,9 +70,8 @@ const Header = () => {
                                     </li>
                                 </ul>
 
-                                <Link to="/">
-                                    <button className="btn btn__transparent nav__btn">Get Started</button>
-                                </Link>
+                                    <button onClick={()=> goToAnchor('getStart')} className="btn btn__transparent nav__btn">Get Started</button>
+                                
                             </div>
                         )}
 
