@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import Lottie from 'react-lottie';
 import './Communication.scss';
 
 import Before from './Before.png';
 import After from './After.png';
+import animationData from './animation.json';
 
 const img = [Before, After];
 
@@ -21,14 +23,30 @@ function Communication() {
     const [selectedTab, setSelectedTab] = useState(0);
     const [active, setActive] = useState(1);
 
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+    };
+
 
     return (
-        <section className="communication">
+        <section className="communication" >
             <div className="container__fluid">
                 <div className="communication__content">
 
                     <div className="communication__images">
-                        <img src={img[selectedTab]} className="tab__img" alt="demo__img" />
+                        {selectedTab === 0 ? (
+                            <img src={Before} className="tab__img" alt="demo__img" />
+                        ) : (
+                                <div className="tab__img">
+                                    <Lottie
+                                        options={defaultOptions}
+                                        className="tab__img"
+                                    />
+                                </div>
+                            )}
+                        
                     </div>
 
                     <div className="communication__text">
@@ -67,7 +85,7 @@ function Communication() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

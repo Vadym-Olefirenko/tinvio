@@ -2,7 +2,7 @@
 
 .communication {
   background-color: #fafbfd;
-  padding: 96px 0 82px;
+  padding: 96px 0 142px;
   position: relative;
   z-index: 2;
 }
@@ -21,8 +21,8 @@
   justify-content: center;
 
   .tab__img {
-    max-width: 624px;
-    height: 370px;
+    max-width: 690px;
+    width: 100%;
     position: relative;
     z-index: 2;
   }
@@ -55,13 +55,9 @@
 }
 
 @media (max-width: 1279px) {
-  .communication__images {
-    width: 50%;
-  }
 
   .communication__images .tab__img {
-    max-width: 474px;
-    height: 300px;
+    max-width: 504px;
   }
 
   .communication__text {
