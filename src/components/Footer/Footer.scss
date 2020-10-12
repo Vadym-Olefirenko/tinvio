@@ -36,6 +36,12 @@
             a {
                 @include font($navFont, 1.1, 600);
                 color: #fff;
+                transition: 0.4s;
+
+                &:hover {
+                    color: #3897ff;
+                    transition: 0.4s;
+                }
             }
         }
 

@@ -29,6 +29,13 @@
         @include font(12px, 100%, 600);
         color: #21272e;
         padding: 0 12px;
+        transition: 0.4s;
+
+        &:hover {
+            color: #3897ff;
+            transition: 0.4s;
+        }
+
     }
 
     a.active {
