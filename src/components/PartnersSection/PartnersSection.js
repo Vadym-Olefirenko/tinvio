@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './PartnersSection.scss';
 import logo1 from './GoCheken.png';
-import logo2 from './Jolliebean.svg';
+import logo2 from './bens.png';
 import logo3 from './Bens.svg';
 import logo4 from './SimplyWrapps.png';
 import logo5 from './Italian.png';

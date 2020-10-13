@@ -9,16 +9,29 @@
 }
 
 .navbar {
-    @include flexRowBetween;
-    padding: 26px 0;
+    display: flex;
+    align-items: center;
+    padding: 18px 0 14px;
+
+    .logo__box {
+        overflow: hidden;
+
+        .main__logo {
+            margin-left: -12px;
+            width: 120px;
+            height: 48px;
+        }
+    }
 }
 
 .nav__list {
     @include flexRowBetween;
     list-style: none;
-    margin-right: auto;
+    margin-left: 2px;
     border-left: 1px solid rgba(33, 39, 46, 0.2);
     min-height: 24px;
+    padding-left: 24px;
+
 
     li {
         @include flexRowCenter; 
@@ -26,9 +39,10 @@
 
     a {
         text-decoration: none;
-        @include font(12px, 100%, 600);
+        @include font(12px, normal, 600);
         color: #21272e;
-        padding: 0 12px;
+        padding-right: 24px;
+        letter-spacing: -0.1px;
         transition: 0.4s;
 
         &:hover {

@@ -3,16 +3,17 @@
 .top__section {
   text-align: center;
   position: relative;
-  padding: 215px 0 223px;
-  height: 715px;
-  background: url("./Boxes.png") no-repeat left -142px top 108% / 450px,
-  url("./Fruits.png") no-repeat right -71px top 78% / 354px;
+  // padding: 198px 0 223px;
+  height: 700px;
+  background: url("./Boxes.png") no-repeat left -126px top 124px/403px,
+  url("./Fruits.png") no-repeat right -64px top 109px/330px;
   background-color: $bgColor;
 }
 
 .top__section-info {
   position: relative;
   z-index: 9;
+  padding-top: 198px;
 }
 
 .confetti {
@@ -25,22 +26,26 @@ h2 {
   @include font(13px, 1.1, bold);
   color: #f43939;
   text-transform: uppercase;
+  letter-spacing: 1.2px;
 }
 
 .top__section h1 {
-  @include font(40px, 1.3, bold);
+  @include font(40px, 1.38, bold);
   color: #21272e;
-  padding: 20px 0 60px 0;
+  padding: 19px 0 48px 0;
+  letter-spacing: 0.6px;
+  text-align: center;
 }
 
 .top__section .its__free {
   @include flexRowCenter;
-  margin-top: 16px;
+  margin-top: 19px;
 }
 
 .its__free p {
   @include font(12px, 1.1, 500);
   color: #909599;
+  padding-left: 7px;
 }
 
 @media screen and (max-width: 1279px) {

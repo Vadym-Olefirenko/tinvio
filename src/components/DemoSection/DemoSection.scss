@@ -1,15 +1,15 @@
 .demo__section {
     position: relative;
     text-align: center;
-    padding: 0 0 100px;
+    padding: 0 0 52px;
 }
 
 .demo__img {
     position: relative;
     z-index: 2;
-    margin-top: -95px;
-    width: 100%;
-    max-width: 984px;
+    margin-top: -99px;
+    height: 100%;
+    max-width: 1055px;
 }
 
 @media screen and (max-width: 700px) {

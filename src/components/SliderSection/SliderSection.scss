@@ -13,19 +13,24 @@
 
 .slider__section-text {
   width: 33%;
+  align-self: flex-start;
+  margin-top: 97px;
 
   h5 {
-    width: 65%;
+    width: 75%;
+    line-height: 42px;
+    letter-spacing: 0.6px;
   }
 }
 
 .slider__section-text p {
-  padding: 24px 0 80px;
+  padding: 27px 0 80px;
+  letter-spacing: 0.2px;
 }
 
 .main__slider-navigation {
   @include flexRowBetween;
-  width: 180px;
+  width: 187px;
   position: relative;
   z-index: 2;
 }
@@ -38,8 +43,8 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  width: 48px;
-  height: 48px;
+  width: 49px;
+  height: 49px;
   border: solid 1px #dae1e8;
   background-color: #fff;
   border-radius: 50%;
@@ -74,8 +79,8 @@
 }
 
 .swiper-pagination-bullet {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   background-color: rgba(33, 39, 46, 0.65);
 }
 
@@ -84,14 +89,15 @@
 }
 
 .swiper__box {
-  width: 999px;
-  height: 592px;
+  width: 970px;
+  height: 591px;
   max-width: 999px;
   border-radius: 53px;
   background-color: #fcede8;
   @include flexRowCenter;
   position: absolute;
-  right: -250px;
+  right: -223px;
+  top: 13px;
 }
 
 .main__slider {
@@ -100,18 +106,18 @@
 
   .swiper-slide {
     &:nth-child(-n + 2) .slide__img {
-      width: 100%;
-      height: 100%;
+      width: 109%;
+      height: 109%;
       object-fit: contain;
-      top: 20px;
-      left: 0;
+      top: -6px;
+      left: -13px;
     }
 
     &:nth-child(3) .slide__img {
-      width: 90%;
-      height: 90%;
+      width: 96%;
+      height: 96%;
       object-fit: contain;
-      top: 15px;
+      top: 12px;
       left: 45px;
     }
   }
@@ -119,6 +125,7 @@
 
 .slide__img-box {
   height: 100%;
+  overflow: hidden;
 }
 
 .slide__img {
