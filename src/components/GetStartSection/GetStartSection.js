@@ -63,12 +63,13 @@ function GetStartSection() {
     return (
         <ScrollableAnchor id={'getStart'}>
             <section className="getStart">
-                <div className="container__fluid">
+                <div className="oval__bg"></div>
+                <div className="container">
                     <div className="getStart__content">
                         <div className="getStartHead">
                             <h2>let’s do this</h2>
                             <h5 className="section__name">
-                                Fill up the form and we’ll get in touch within
+                                Fill up the form and we’ll get in touch within <br/>
                                 a few hours
                         </h5>
                         </div>
@@ -89,7 +90,7 @@ function GetStartSection() {
                                     <p>Let’s get to know each other</p>
                                 </div>
                                 <div className="form__head">
-                                    <h6>Hi, we’re Tinvio! And you?</h6>
+                                    <h6>Hi, we are Tinvio! And you?</h6>
                                 </div>
                                 <div className="input__wrap">
                                     <input

@@ -1,7 +1,7 @@
 @import "../../general";
 
 .slider__section {
-  padding: 60px 0 130px;
+  padding: 60px 0 74px;
   overflow-x: hidden;
   position: relative;
 }
@@ -14,12 +14,12 @@
 .slider__section-text {
   width: 33%;
   align-self: flex-start;
-  margin-top: 97px;
+  margin-top: 96px;
 
   h5 {
     width: 75%;
     line-height: 42px;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.7px;
   }
 }
 
@@ -134,16 +134,18 @@
 
 @media screen and (max-width: 1279px) {
   .swiper__box {
-    right: -500px;
+    right: -479px;
   }
 
   .slider__section-text {
-    width: 38%;
+    width: 40%;
+    margin-left: 31px;
+
+    h5 {
+      width: 90%;
+    }
   }
 
-  .slider__section-text {
-    width: 38%;
-  }
 }
 
 @media screen and (max-width: 1023px) {

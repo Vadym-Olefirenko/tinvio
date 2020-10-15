@@ -12,7 +12,7 @@ import GoogleStore from './googlePlayBadge.png';
 function Footer() {
     return (
         <footer className="footer">
-            <div className="container">
+            <div className="container__special">
                 <div className="footer__content">
 
                     <Link to="/">
@@ -88,6 +88,7 @@ function Footer() {
             </div>
 
         </footer>
+        
     )
 }
 

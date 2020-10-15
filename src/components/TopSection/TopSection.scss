@@ -13,13 +13,13 @@
 .top__section-info {
   position: relative;
   z-index: 9;
-  padding-top: 198px;
+  padding-top: 197px;
 }
 
 .confetti {
   width: 15px;
   height: 15px;
-  margin-left: 10px;
+  margin-left: 2px;
 }
 
 h2 {
@@ -33,25 +33,26 @@ h2 {
   @include font(40px, 1.38, bold);
   color: #21272e;
   padding: 19px 0 48px 0;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.7px;
   text-align: center;
 }
 
 .top__section .its__free {
   @include flexRowCenter;
-  margin-top: 19px;
+  margin-top: 20px;
 }
 
-.its__free p {
-  @include font(12px, 1.1, 500);
-  color: #909599;
-  padding-left: 7px;
+.its__free {
+  p {
+    @include font(12px, 1.1, 500);
+    color: #909599;
+  }
 }
 
 @media screen and (max-width: 1279px) {
   .top__section {
-    background: url("./Boxes.png") no-repeat left -249px top 135% / 450px,
-      url("./Fruits.png") no-repeat right -171px top 76% / 354px;
+    background: url("./Boxes.png") no-repeat left -222px top 124px/403px,
+    url("./Fruits.png") no-repeat right -152px top 109px/330px;
   }
 }
 

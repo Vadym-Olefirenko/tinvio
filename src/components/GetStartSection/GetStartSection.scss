@@ -4,19 +4,37 @@
   src: url("../../fonts/Hand_Of_Sean.ttf");
 }
 
-.getStart__container {
-  max-width: 1128px;
-  margin: 0px auto;
-  padding: 0px 20px;
-  box-sizing: content-box;
-}
 
 .getStart {
-  padding: 168px 0 91px;
+  position: relative;
+  padding: 229px 0 39px;
   background-image: linear-gradient(
     rgb(255, 255, 255) 0%,
     rgb(250, 250, 250) 100%
   );
+}
+
+@media (min-width: 1280px) {
+  .getStart::after {
+    content: "";
+    width: 66px;
+    height: 77px;
+    position: absolute;
+    bottom: 57px;
+    right: 37px;
+    background: url('./dots.png') no-repeat bottom right / 105px 150px;
+    border-top-left-radius: 51px;
+  }
+}
+
+.oval__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url('./ovalbg.png') no-repeat left -113px bottom -49px / 719px;
+  z-index: 0;
 }
 
 .getStart__content {
@@ -30,8 +48,10 @@
 .getStartHead {
   width: 494px;
   h5 {
-    padding: 16px 30px 140px 0;
-    @include font(40px, 1.36, bold);
+    padding: 17px 0 150px 0;
+    @include font(40px, 56px, bold);
+    text-align: left;
+    letter-spacing: 0.7px;
   }
 }
 
@@ -44,16 +64,16 @@
 
 .meet__us-arrow {
   position: absolute;
-  top: -50px;
-  left: -60px;
+  top: -46px;
+  left: -53px;
 
   img {
-    width: 110px;
+    width: 109px;
     height: 64px;
     object-fit: contain;
     position: absolute;
-    top: -26px;
-    right: -28px;
+    top: -30px;
+    right: -31px;
   }
 }
 
@@ -67,17 +87,20 @@
     flex-wrap: wrap;
     width: 288px;
     height: 150px;
-    padding: 20px 25px;
+    padding: 14px 26px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 14px -6px;
     background-color: #fff;
     border-radius: 8px;
-    position: relative; 
-
+    position: relative;
 
     .country__item {
       display: flex;
       align-items: center;
       width: 50%;
+
+      &:nth-child(even) {
+        padding-left: 28px;
+      }
 
       .country__name {
         @include font(14px, 1.36, 500);
@@ -85,7 +108,7 @@
       }
 
       img {
-        margin-right: 8px;
+        margin-right: 9px;
       }
     }
   }
@@ -96,13 +119,14 @@
   max-width: 447px;
   height: 496px;
   margin-left: 80px;
+  margin-top: 5px;
 
   .form__box-bg {
     position: absolute;
-    width: 100%;
+    width: 105%;
     height: 100%;
-    background: url("./dots.png") no-repeat right top 55px / 98px 182px,
-      url("./dots.png") no-repeat left 62% bottom / 98px 182px;
+    background: url("./dots.png") no-repeat right 1px  top 40px / 98px 182px,
+      url("./dots.png") no-repeat left 57% bottom / 98px 182px;
     z-index: 2;
   }
 
@@ -111,17 +135,17 @@
     @include font(20px, 1.1, normal);
     color: #21272e;
     position: absolute;
-    left: 20%;
-    top: -48px;
-    letter-spacing: -3px;
+    left: 18%;
+    top: -61px;
+    letter-spacing: -2.7px;
 
     img {
       position: absolute;
-      left: -34px;
+      left: -42px;
       right: auto;
-      top: -40px;
-      width: 120px;
-      height: 70px;
+      top: -31px;
+      width: 117px;
+      height: 50px;
     }
 
     p {
@@ -136,20 +160,24 @@
     box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     padding: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     position: relative;
     z-index: 5;
+
+    h6 {
+      line-height: 1.4;
+      padding-bottom: 48px;
+    }
 
     .input__wrap {
       width: 100%;
       height: 56px;
       @include flexRowBetween;
+      margin-bottom: 32px;
     }
 
     .spec__wrap {
       position: relative;
+      margin-bottom: 37px;
       &::after {
         content: "";
         display: inline-block;
@@ -192,19 +220,27 @@
     .no__spam {
       @include font(12px, 1.1, 500);
       color: #909599;
-      padding-right: 10px;
+      padding-right: 14px;
     }
   }
 }
 
 @media screen and (max-width: 1279px) {
+
+  .oval__bg {
+    background: url('./ovalbg.png') no-repeat left -113px bottom 27px/719px;
+  }
   .getStartHead h5 {
-    padding: 16px 37px 140px 0;
+    padding: 16px 37px 131px 0;
+
+    br {
+      display: none;
+    }
   }
 
   .form__box {
-    margin-left: 0;
-    margin-top: 100px;
+    margin-left: 31px;
+    margin-top: 108px;
 
     .form__box-bg {
       width: 110%;
@@ -215,7 +251,7 @@
     }
 
     .sign__us-arrow {
-      top: -128px;
+      top: -165px;
     }
   }
 
@@ -224,7 +260,7 @@
   }
 
   .getStart {
-    padding: 200px 0 191px;
+    padding: 252px 0 119px;
   }
 }
 
@@ -284,7 +320,7 @@
       bottom: -60px;
       width: 180px;
       height: 150px;
-      background: url('./dots.png') no-repeat top center / contain;
+      background: url("./dots.png") no-repeat top center / contain;
       transform: rotate(90deg) scaleY(-1);
     }
   }

@@ -43,7 +43,7 @@ function Order() {
     )
 }
 
-const Card = ({src, text, icon}) => {
+const Card = ({ src, text, icon }) => {
     return (
         <div className="card">
             <img src={src} alt="img" className="card__img" />

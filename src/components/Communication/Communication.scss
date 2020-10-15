@@ -2,9 +2,9 @@
 
 .communication {
   background-color: #fafbfd;
-  padding: 96px 0 142px;
+  padding: 101px 0 44px;
   position: relative;
-  z-index: 2;
+  z-index: 0;
 }
 
 .communication__content {
@@ -12,16 +12,22 @@
   flex-direction: column;
   flex-wrap: wrap;
   height: 415px;
+  position: relative;
+  z-index: 2;
 }
 
 .communication__images {
-  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  left: -23px;
+  top: 10px;
+  width: 624px;
+  margin-right: 96px;
 
   .tab__img {
-    max-width: 690px;
+    max-width: 624px;
     width: 100%;
     position: relative;
     z-index: 2;
@@ -29,17 +35,30 @@
 }
 
 .communication__text {
-  width: 33%;
+  width: 36%;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 408px;
+    height: 1px;
+    opacity: 0.2;
+    background-color: #21272e;
+  }
 
   h5 {
-    margin-bottom: 40px;
+    margin-bottom: 44px;
+    letter-spacing: 0.65px;
   }
 
   .tabs__btn-group {
     display: flex;
     justify-content: flex-start;
     padding-bottom: 64px;
-    border-bottom: solid 2px rgba(33, 39, 46, 0.14);
   }
 
   h6 {
@@ -50,18 +69,32 @@
 }
 
 .tabs__desk {
-  width: 33%;
-  margin-top: 56px;
+  width: 36%;
+  margin-top: 57px;
+
+  .section__desk {
+    padding-top: 9px;
+  }
 }
 
 @media (max-width: 1279px) {
-
   .communication__images .tab__img {
-    max-width: 504px;
+    max-width: 466px;
+  }
+
+  .communication__images {
+    left: 0;
+    width: 530px;
+    margin-right: 38px;
+    top: 58px;
   }
 
   .communication__text {
     width: 40%;
+  }
+
+  .tabs__desk {
+    width: 41%;
   }
 }
 

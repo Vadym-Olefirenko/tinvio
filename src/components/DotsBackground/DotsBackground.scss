@@ -8,17 +8,17 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("./b1.png") no-repeat right 80px top / 640px,
-    url("./b2.png") no-repeat right 92px top 851px/970px,
-    url("./b3.png") no-repeat left 310px  bottom 1000px / 710px,
-    url("./b4.png") no-repeat left 316px bottom 180px / 360px;
+  background: url("./b1.png") no-repeat right 93px top 5px/600px,
+    url("./b2.png") no-repeat right 100px top 802px/961px,
+    url("./b3.png") no-repeat left 319px bottom 998px/710px,
+    url("./b4.png") no-repeat left 323px bottom 151px/370px;
 }
 
 @media screen and (max-width: 1279px) {
   .dots__bg {
-    background: url("./b1.png") no-repeat right -170px top / 640px,
-      url("./b2.png") no-repeat right -180px top 1114px /970px,
-      url("./b3.png") no-repeat left 370px  bottom 1050px / 670px,
+    background: url("./b1.png") no-repeat right -163px top / 600px,
+      url("./b2.png") no-repeat right -164px top 1113px/960px,
+      url("./b3.png") no-repeat left 335px bottom 1002px/695px,
       url("./b4.png") no-repeat left 316px bottom 190px / 390px;
   }
 }

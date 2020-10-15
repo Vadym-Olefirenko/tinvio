@@ -35,6 +35,7 @@
 
     li {
         @include flexRowCenter; 
+        margin-top: -5px;
     }
 
     a {
@@ -70,6 +71,8 @@
     @include font(12px, 100%, 600);
     width: 103px;
     height: 36px;
+    padding: 0 9px 6px;
+    letter-spacing: -0.1px;
 }
 
 .laptop__navigation {
@@ -79,9 +82,7 @@
 
 @media screen and (max-width: 1279px) {
     
-    .nav__btn {
-        margin-right: 15px;
-    }
+    
 }
 
 @media screen and (max-width: 1023px) {
