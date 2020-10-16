@@ -4,7 +4,6 @@
   src: url("../../fonts/Hand_Of_Sean.ttf");
 }
 
-
 .getStart {
   position: relative;
   padding: 229px 0 39px;
@@ -22,7 +21,7 @@
     position: absolute;
     bottom: 57px;
     right: 37px;
-    background: url('./dots.png') no-repeat bottom right / 105px 150px;
+    background: url("./dots.png") no-repeat bottom right / 105px 150px;
     border-top-left-radius: 51px;
   }
 }
@@ -33,8 +32,8 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: url('./ovalbg.png') no-repeat left -113px bottom -49px / 719px;
-  z-index: 0;
+  background: url("./ovalbg.png") no-repeat left -113px bottom -49px / 719px;
+  z-index: 2;
 }
 
 .getStart__content {
@@ -125,7 +124,7 @@
     position: absolute;
     width: 105%;
     height: 100%;
-    background: url("./dots.png") no-repeat right 1px  top 40px / 98px 182px,
+    background: url("./dots.png") no-repeat right 1px top 40px / 98px 182px,
       url("./dots.png") no-repeat left 57% bottom / 98px 182px;
     z-index: 2;
   }
@@ -215,6 +214,7 @@
       width: 172px;
       height: 52px;
       outline: none;
+      padding: 0 2px 5px 11px;
     }
 
     .no__spam {
@@ -226,12 +226,11 @@
 }
 
 @media screen and (max-width: 1279px) {
-
   .oval__bg {
-    background: url('./ovalbg.png') no-repeat left -113px bottom 27px/719px;
+    background: url("./ovalbg.png") no-repeat left -113px bottom 30px/719px;
   }
   .getStartHead h5 {
-    padding: 16px 37px 131px 0;
+    padding: 18px 37px 131px 0;
 
     br {
       display: none;
@@ -239,15 +238,29 @@
   }
 
   .form__box {
-    margin-left: 31px;
-    margin-top: 108px;
+    margin-left: 34px;
+    margin-top: 110px;
 
     .form__box-bg {
-      width: 110%;
-      height: 110%;
-      top: -5%;
-      left: -5%;
-      background: url("./dots.png") no-repeat right 10px top / 98px 182px;
+      width: 120%;
+      height: 120%;
+      top: -15%;
+      left: -1%;
+      background: url("./dots.png") no-repeat right 40px top 5px/ 100px 182px;
+    }
+
+    .contact__form {
+      .input__wrap {
+        margin-bottom: 32px;
+      }
+
+      .spec__wrap {
+        margin-bottom: 37px;
+      }
+
+      h6 {
+        padding-bottom: 49px;
+      }
     }
 
     .sign__us-arrow {
@@ -260,23 +273,46 @@
   }
 
   .getStart {
-    padding: 252px 0 119px;
+    padding: 250px 0 116px;
+  }
+}
+
+@media screen and (max-width: 1022px) {
+  .getStart::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    background-color:#fff;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .getStart {
-    padding: 120px 0 81px;
+    padding: 108px 0 81px;
+  }
+
+  .oval__bg {
+    background: url("./ovalbg.png") no-repeat left -132px bottom 397px/719px;
   }
 
   .getStartHead {
     text-align: center;
     width: 100%;
     order: 1;
+    position: relative;
+    left: 15px;
 
     h5 {
-      padding: 16px 0 164px;
-      width: 100%;
+      padding: 19px 0 170px;
+      width: 68%;
+      @include font(32px, 45px, bold);
+      margin: 0 auto;
+      text-align: center;
     }
   }
 
@@ -288,25 +324,28 @@
   .meet__us {
     order: 3;
     margin-top: 77px;
+    left: 13px;
 
     .meet__us-arrow {
-      left: 40%;
-      transform: translateX(-50%);
+      left: 72px;
+      top: -48px;
     }
   }
 
   .form__box {
     height: 486px;
     order: 2;
-    margin-top: 0;
+    margin-top: -7px;
+    margin-left: -3px;
 
     .form__box-bg {
-      background: url("./dots.png") no-repeat right top 55px / 98px 182px,
-        url("./dots.png") no-repeat left 62% bottom 30px / 98px 182px;
+      background: url("./dots.png") no-repeat right 16px top 117px / 98px 182px,
+        url("./dots.png") no-repeat left 62% bottom 33px / 98px 182px;
     }
 
     .sign__us-arrow {
-      top: -68px;
+      top: -62px;
+      left: 86px;
     }
   }
 
@@ -316,11 +355,11 @@
       display: inline-block;
       position: absolute;
       z-index: -1;
-      right: -30px;
-      bottom: -60px;
-      width: 180px;
-      height: 150px;
-      background: url("./dots.png") no-repeat top center / contain;
+      right: -14px;
+      bottom: -83px;
+      width: 130px;
+      height: 210px;
+      background: url("./dots.png") no-repeat top right / 111px 181px;
       transform: rotate(90deg) scaleY(-1);
     }
   }
@@ -328,6 +367,11 @@
 
 @media screen and (max-width: 767px) {
   .getStartHead {
+
+    &::before {
+      display: none;
+    }
+
     h5 {
       font-size: 24px;
     }

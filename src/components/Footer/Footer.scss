@@ -32,6 +32,10 @@
         line-height: 8px;
       }
 
+      .footer__blog-link {
+        display: none;
+      }
+
       a {
         @include font($navFont, 12px, 600);
         letter-spacing: 0.2px;
@@ -99,14 +103,16 @@
 
 @media (max-width: 1023px) {
   .footer {
-    padding: 48px 0 33px;
+    padding: 30px 0 19px;
   }
 
   .footer__content {
-    height: 115px;
+    height: 140px;
+    padding-left: 40px;
 
     .foot__logo {
       margin-left: -12px;
+      margin-top: 5px;
     }
 
     .footer__nav {
@@ -114,17 +120,26 @@
 
       .footer__nav--list {
         justify-content: flex-start;
+
+        .footer__blog-link {
+          display: block;
+        }
+
+        li:nth-child(2) {
+          display: none;
+        }
       }
     }
 
     .footer__rights {
       position: static;
       order: 2;
+      letter-spacing: 0.1px;
     }
 
     .footer__socials {
       order: 3;
-      margin-left: 24px;
+      margin-left: 23px;
     }
 
     .footer__stores {

@@ -46,6 +46,21 @@ main {
     }
 }
 
+@media (max-width: 1023px) {
+    .container {
+        padding: 0px 24px;
+    }
+
+    .slider__section .container {
+        padding: 0px 36px;
+    }
+
+    .container__special {
+        max-width: 756px;
+        padding: 0 10px;
+    }
+}
+
 @media (max-width: 767px) {
     .container {
         padding: 0px 24px;

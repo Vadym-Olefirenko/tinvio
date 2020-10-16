@@ -58,12 +58,11 @@ h2 {
 
 @media screen and (max-width: 1023px) {
   .top__section {
-    padding: 215px 0 150px;
-    background: url("./Boxes.png") no-repeat left -281px top 135% / 450px,
-      url("./Fruits.png") no-repeat right -173px top 80% / 354px;
+    background: url("./Boxes.png") no-repeat left -254px top 124px/403px,
+    url("./Fruits.png") no-repeat right -167px top 108px/330px;
 
     h1 {
-      padding: 20px 0 140px 0;
+      padding: 19px 0 112px 0;
     }
   }
 }

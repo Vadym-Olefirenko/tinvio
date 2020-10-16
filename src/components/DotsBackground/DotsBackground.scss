@@ -19,16 +19,16 @@
     background: url("./b1.png") no-repeat right -163px top / 600px,
       url("./b2.png") no-repeat right -164px top 1113px/960px,
       url("./b3.png") no-repeat left 335px bottom 1002px/695px,
-      url("./b4.png") no-repeat left 316px bottom 190px / 390px;
+      url("./b4.png") no-repeat left 324px bottom 148px/370px;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .dots__bg {
-    background: url("./b1.png") no-repeat right -430px top / 600px,
-      url("./b2.png") no-repeat right -180px top 1114px /750px,
-      url("./b3.png") no-repeat left 70px  bottom 3900px / 670px,
-      url("./b4.png") no-repeat left 103px bottom 530px / 390px;
+    background: url("./b1.png") no-repeat right -419px top 7px / 600px,
+      url("./b2.png") no-repeat right -409px top 769px/960px,
+      url("./b3.png") no-repeat left 51px bottom 3788px/695px,
+      url("./b1.png") no-repeat left 324px bottom 566px/570px;
   }
 }
 

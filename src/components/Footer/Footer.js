@@ -47,6 +47,12 @@ function Footer() {
                                     FAQ
                             </Link>
                             </li>
+
+                            <li className="footer__blog-link">
+                                <Link to="/blog">
+                                    Blog
+                            </Link>
+                            </li>
                             <li>
                                 <Link to="/legal">
                                     Legal
@@ -88,7 +94,7 @@ function Footer() {
             </div>
 
         </footer>
-        
+
     )
 }
 

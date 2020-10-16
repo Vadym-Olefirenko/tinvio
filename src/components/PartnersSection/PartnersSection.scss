@@ -41,9 +41,20 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .partner__logo {
-    width: 70%;
+  .logo__row {
+    .logo__item {
+      .partner__logo {
+        width: 124px;
+        height: 77px;
+      }
+    }
   }
+
+  .logo__row .logo__item:nth-child(3) .partner__logo {
+    width: 124px;
+    height: 67px;
+    margin-top: 5px;
+}
 }
 
 @media screen and (max-width: 767px) {

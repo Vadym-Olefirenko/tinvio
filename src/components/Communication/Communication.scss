@@ -99,6 +99,11 @@
 }
 
 @media (max-width: 1023px) {
+
+  .communication {
+    padding: 68px 0 71px;
+  }
+
   .communication__content {
     height: auto;
     align-items: center;
@@ -109,6 +114,14 @@
     width: 100%;
     order: 1;
 
+    &::after {
+      display: none;
+    }
+
+    h5 {
+      margin-bottom: 50px;
+    }
+
     .tabs__btn-group {
       justify-content: center;
       border-bottom: none;
@@ -117,13 +130,27 @@
 
   .tabs__desk {
     order: 3;
-    width: 50%;
+    width: 55%;
     text-align: center;
+    margin-top: 94px;
+
+    .section__desk {
+      padding-top: 9px;
+      width: 80%;
+      margin: 0 auto;
+  }
   }
 
   .communication__images {
     margin-left: 0;
     order: 2;
+    width: 469px;
+    top: 26px;
+    margin-right: 34px;
+
+    .tab__img {
+      max-width: 100%;
+    }
   }
 }
 
