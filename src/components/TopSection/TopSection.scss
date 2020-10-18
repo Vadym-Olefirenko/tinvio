@@ -6,7 +6,7 @@
   // padding: 198px 0 223px;
   height: 700px;
   background: url("./Boxes.png") no-repeat left -126px top 124px/403px,
-  url("./Fruits.png") no-repeat right -64px top 109px/330px;
+    url("./Fruits.png") no-repeat right -64px top 109px/330px;
   background-color: $bgColor;
 }
 
@@ -52,14 +52,16 @@ h2 {
 @media screen and (max-width: 1279px) {
   .top__section {
     background: url("./Boxes.png") no-repeat left -222px top 124px/403px,
-    url("./Fruits.png") no-repeat right -152px top 109px/330px;
+      url("./Fruits.png") no-repeat right -152px top 109px/330px;
+    background-color: $bgColor;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .top__section {
     background: url("./Boxes.png") no-repeat left -254px top 124px/403px,
-    url("./Fruits.png") no-repeat right -167px top 108px/330px;
+      url("./Fruits.png") no-repeat right -167px top 108px/330px;
+    background-color: $bgColor;
 
     h1 {
       padding: 19px 0 112px 0;
@@ -69,18 +71,27 @@ h2 {
 
 @media screen and (max-width: 767px) {
   .top__section {
-    padding: 125px 0 0;
-    height: 1190px;
-    background: url("./Boxes.png") no-repeat left -182px bottom 18% / 400px,
-      url("./Fruits.png") no-repeat right -168px bottom 10% / 331px;
-  }
+    height: 1185px;
+    background: url("./Boxes.png") no-repeat left -178px bottom 114px / 403px,
+      url("./Fruits.png") no-repeat right -165px bottom 74px / 330px;
+    background-color: $bgColor;
 
-  .top__section h1 {
-    @include font(28px, 1.1, bold);
-    padding: 20px 0 42px 0;
-  }
+    .top__section-info {
+      padding-top: 121px;
+    }
 
-  .top__section h1 br {
-    display: none;
+    h2 {
+      position: relative;
+      left: 11px;
+    }
+
+    h1 {
+      @include font(28px, 1.38, bold);
+      padding: 19px 0 48px 0;
+
+      br {
+        display: none;
+      }
+    }
   }
 }

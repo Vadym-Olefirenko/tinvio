@@ -60,17 +60,28 @@
 @media screen and (max-width: 767px) {
   .partners {
     padding: 10px 0 60px;
+
+    .section__name {
+      @include font(28px, 1.36, bold);
+    }
   }
 
   .partners__slider {
+    margin-top: 45px;
     .swiper-slide {
       @include flexRowCenter;
+      width: auto;
 
       .slide__img {
         position: relative;
         width: 127px;
         height: 77px;
         object-fit: contain;
+      }
+
+      &:nth-child(6) .slide__img {
+        width: 127px;
+        height: 67px;
       }
     }
   }

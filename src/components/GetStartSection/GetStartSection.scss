@@ -287,7 +287,7 @@
     z-index: 2;
     right: 0;
     top: 0;
-    background-color:#fff;
+    background-color: #fff;
   }
 }
 
@@ -366,20 +366,30 @@
 }
 
 @media screen and (max-width: 767px) {
-  .getStartHead {
+  .getStart {
+    padding: 72px 0 88px;
+  }
 
+  .oval__bg {
+    display: none;
+  }
+
+  .getStartHead {
+    left: 0;
     &::before {
       display: none;
     }
 
     h5 {
-      font-size: 24px;
+      @include font(28px, 1.4, bold);
+      width: 93%;
+      padding: 19px 0 132px;
     }
   }
 
   .form__box {
     width: 100%;
-    height: 486px;
+    height: 492px;
     order: 2;
     margin-top: 0;
 
@@ -394,6 +404,12 @@
 
     .contact__form {
       width: 100%;
+      height: 491px;
+      padding: 32px 25px 32px 32px;
+
+      .form__head {
+        padding-left: 5px;
+      }
 
       .input__wrap {
         flex-wrap: wrap;
@@ -402,14 +418,15 @@
 
       .spec__wrap {
         justify-content: space-between;
+        margin-bottom: 40px;
       }
 
       .code__input {
-        width: 30%;
+        width: 32%;
       }
 
       .phone__input {
-        width: 63%;
+        width: 62%;
       }
 
       .input__wrap:last-child {
@@ -417,20 +434,28 @@
       }
 
       .form__btn {
-        width: 100%;
-        margin-bottom: 16px;
+        width: 252px;
+        margin:0 auto 21px;
+        padding: 0 2px 5px 16px;
+      }
+
+      .no__spam {
+        padding-right: 5px;
       }
     }
 
     .sign__us-arrow {
       left: auto;
       right: 0;
+      top: -55px;
     }
   }
 
   .meet__us {
+    margin-top: 128px;
+    left: 0;
     .meet__us-arrow {
-      left: 25%;
+      left: 11px;
     }
   }
 }

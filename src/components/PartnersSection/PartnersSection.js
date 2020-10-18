@@ -14,8 +14,8 @@ function PartnersSection() {
 
     const sliderParams = {
         className: 'partners__slider',
-        spaceBetween: 10,
-        slidesPerView: 2,
+        spaceBetween: 0,
+        slidesPerView: 3,
         centeredSlides: true,
         loop: true,
         autoplay: {

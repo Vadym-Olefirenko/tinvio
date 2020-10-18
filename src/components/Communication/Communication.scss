@@ -99,7 +99,6 @@
 }
 
 @media (max-width: 1023px) {
-
   .communication {
     padding: 68px 0 71px;
   }
@@ -138,7 +137,7 @@
       padding-top: 9px;
       width: 80%;
       margin: 0 auto;
-  }
+    }
   }
 
   .communication__images {
@@ -155,16 +154,32 @@
 }
 
 @media (max-width: 767px) {
+  .communication {
+    padding: 68px 0 61px;
+  }
+
+  .communication__text h5 {
+    margin-bottom: 53px;
+  }
+
+  .communication__content {
+    align-items: baseline;
+  }
+
   .communication__images {
-    width: 100%;
-    .tab__img {
-      width: 100%;
-      height: auto;
-    }
+    width: 343px;
+    height: 206px;
+    margin-right: 0;
+    top: 5px;
+    left: -16px;
   }
 
   .tabs__desk {
     width: 100%;
-    bottom: 40px;
+    margin-top: 59px;
+
+    .section__desk {
+      width: 100%;
+    }
   }
 }

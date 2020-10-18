@@ -37,8 +37,8 @@
     }
 
     img {
-        width: 57px;
-        height: 56px;
+      width: 57px;
+      height: 56px;
     }
 
     h6 {
@@ -54,7 +54,6 @@
 }
 
 @media screen and (max-width: 1279px) {
-  
   .steps__row {
     .step:nth-child(-n + 2)::after {
       width: 224px;
@@ -64,7 +63,6 @@
 }
 
 @media screen and (max-width: 1023px) {
-
   .steps {
     padding: 91px 0 103px;
   }
@@ -123,7 +121,18 @@
 
   .steps__head {
     h5 {
-      font-size: 28px;
+      @include font(28px, 1.3, bold);
+      width: 90%;
+      margin: 0 auto;
+      padding: 22px 0 63px;
+    }
+  }
+
+  .steps__row .step:nth-child(2) {
+    margin-bottom: 106px;
+
+    &::after {
+      bottom: -82px;
     }
   }
 }

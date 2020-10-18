@@ -3,10 +3,8 @@ import Lottie from 'react-lottie';
 import './Communication.scss';
 
 import Before from './Before.png';
-import After from './After.png';
 import animationData from './animation.json';
 
-const img = [Before, After];
 
 const textContent = [
     {
