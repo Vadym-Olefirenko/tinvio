@@ -13,8 +13,32 @@
 }
 
 @media screen and (max-width: 1279px) {
+
+  .demo__section {
+    padding: 0 0 31px;
+  }
+
   .demo__img {
-    width: 100%;
+    width: 1069px;
+    height: 659px;
+    object-fit: contain;
+    left: -40px;
+    margin-top: -121px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  .demo__section {
+    padding: 0 0 58px;
+  }
+
+  .demo__img {
+    width: 750px;
+    height: 434px;
+    object-fit: contain;
+    left: -13px;
+    margin-top: -99px;
   }
 }
 
@@ -27,5 +51,6 @@
     width: 743px;
     height: 432px;
     margin-top: -71px;
+    left: auto;
   }
 }
