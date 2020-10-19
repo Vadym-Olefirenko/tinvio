@@ -4,7 +4,7 @@
   background-color: #21272e;
   position: relative;
   z-index: 5;
-  padding: 40px 0;
+  padding: 38px 0 41px;
 }
 
 .footer__content {
@@ -37,7 +37,7 @@
       }
 
       a {
-        @include font($navFont, 12px, 600);
+        @include font($navFont, 12px, 500);
         letter-spacing: 0.2px;
         color: #fff;
         transition: 0.4s;
@@ -97,7 +97,7 @@
     position: absolute;
     bottom: -28px;
     left: 17px;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.35px;
   }
 }
 
@@ -145,6 +145,7 @@
     .footer__stores {
       order: 4;
       margin-left: auto;
+      margin-right: 15px;
     }
   }
 }
@@ -157,7 +158,7 @@
   .footer__content {
     flex-direction: column;
     height: auto;
-    padding-left: 7px;
+    padding-left: 14px;
 
     .foot__logo {
       margin-left: 0;
@@ -179,7 +180,7 @@
 
         li {
           margin-right: 0;
-          margin-bottom: 29px;
+          margin-bottom: 28.5px;
 
           &:last-child {
             margin-bottom: 0;
@@ -189,7 +190,8 @@
     }
 
     .footer__rights {
-      padding-top: 18px;
+      padding-top: 17px;
+      margin-left: -8px;
       order: 5;
     }
 
@@ -203,7 +205,7 @@
 
       .foot__soc-item:first-child {
         margin-left: 0;
-        margin-right: 25px
+        margin-right: 25px;
       }
     }
 

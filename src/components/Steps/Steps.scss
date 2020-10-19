@@ -64,7 +64,7 @@
 
 @media screen and (max-width: 1023px) {
   .steps {
-    padding: 91px 0 103px;
+    padding: 87px 0 101px;
   }
 
   .steps__head {
@@ -102,6 +102,7 @@
       }
 
       &:last-child {
+        margin-right: 11px;
         br {
           display: none;
         }
